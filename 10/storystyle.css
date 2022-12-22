@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital@1&family=Sono&display=swap');
+
+.stps{
+    width: 100%;
+    
+}
+.story{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Sono', sans-serif;
+    
+    font-size: 26px;
+    margin-bottom: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: url("https://i.pinimg.com/564x/83/43/d7/8343d7ea789256780603ed03a6c4d7df.jpg");
+}
+.osnova h1{
+    font-family: 'Playfair Display', serif;
+    
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 400px;
+}
+
+#obtek{
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 20%;
+}
+.story > p{
+    margin-bottom: 4px;
+}

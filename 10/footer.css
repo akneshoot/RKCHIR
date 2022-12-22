@@ -1,0 +1,139 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid; 
+    justify-content: ned;
+    align-content: end;
+    min-height: 100vh;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100x;
+    background: url(https://phonoteka.org/uploads/posts/2021-06/1624152168_12-phonoteka_org-p-oboi-na-rabochii-stol-mramor-krasivo-16.jpg);
+}
+footer .container
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 20px;
+}
+
+footer .container .sec h2{
+    position: relative;
+    color: rgb(20, 11, 11);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container .sec h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #ffeb3b;
+}
+
+footer .container .sec p{
+    color: #fff;
+}
+
+.sci{
+    margin-top: 20px;
+    
+}
+.sci li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+footer .sci li a{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+footer .sci li a:hover{
+    background: #6380fe;
+}
+footer .sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.quicklinks{
+    position: relative;
+}
+.quicklinks li{
+    list-style: none;
+}
+.quicklinks li a{
+    color: #f7f7f7;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quicklinks li a:hover{
+    color: #ffeb3b;
+}
+.info{
+    position: relative;
+}
+.info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+.info li span:nth-child(1){
+    color:rgb(82, 27, 73);
+    font-size: 20px;
+}
+.info li span{
+    color: rgb(26, 10, 10);
+}
+.info a{
+    color: #f7f7f7;
+    text-decoration: none;
+}
+.info a:hover{
+    color: #ffeb3b;
+}
+.copyrightText{
+    width: 100%;
+    background: url(https://phonoteka.org/uploads/posts/2021-06/1624152168_12-phonoteka_org-p-oboi-na-rabochii-stol-mramor-krasivo-16.jpg);
+    padding: 8px 100px;
+    text-align: center;
+    color: rgb(20, 5, 5);
+}
+
+@media (max-width:991px){
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .copyrightText{
+        
+        padding: 8px 40px;
+        
+    }
+}
+@media (max-width:768px){
+    footer .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+

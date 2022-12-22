@@ -1,0 +1,96 @@
+
+
+
+.haro {
+  background: url('https://i.pinimg.com/originals/8d/0b/7f/8d0b7f01fb261c052b0b8d511ef93f57.jpg') center;
+  background-size: cover;
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+}
+
+.haro > * {
+  color: white;
+}
+
+.haro > h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.haro > article > p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.haro > article > a {
+  padding: 1rem;
+  margin-top: .75rem;
+}
+
+.breweries {
+  padding: 2rem;
+}
+
+.breweries > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.breweries > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+}
+
+.breweries > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.breweries > ul > li > figure > img {
+  width: 100%;
+}
+
+.breweries > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.breweries > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.breweries > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #161212;
+}
+
+.breweries > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+  
+  
+}
+a {
+  
+    background-color: goldenrod;
+    text-decoration: none;
+    color: white;
+    border-radius: .25rem;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+  }
+  
+ 

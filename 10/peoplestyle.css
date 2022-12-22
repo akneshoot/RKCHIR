@@ -1,0 +1,341 @@
+:root{
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+  }
+  
+  
+  
+  
+  body{
+    height: 100%;
+  }
+  
+  .hero-section{
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-l);
+  }
+  
+  .card-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+  }
+  
+  @media(min-width: 540px){
+    .card-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media(min-width: 960px){
+    .card-grid{
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+.box{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 280px;
+    height: 420px;
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 280px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 280px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+  .card{
+    list-style: none;
+    position: relative;
+    inset: 5px;
+    z-index: 20;
+    border-radius: 8px;
+  }
+  
+  .card:before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  
+  .card__background{
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: 
+      filter 200ms linear,
+      transform 200ms linear;
+  }
+  
+  .box:hover .card__background{
+    transform: scale(1.05) translateZ(0);
+  }
+  
+  .card-grid:hover > .box:not(:hover) .card__background{
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  
+  .card__content{
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card__category{
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+  }
+  
+  .card__heading{
+    color: var(--text-lighter);
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    
+  }
+
+  .card__best{
+    position: relative;
+    color: var(--text-lighter);
+    font-size: 1rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    top: 300px;
+    
+  }
+  .why{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    
+  }
+  .why h2{
+    margin-left: 300px;
+  }
+  .why ol{
+    margin-left: 300px;
+  }
+  
+  .why li{
+    border: 5px solid #31547c;
+    border-radius: .5rem;
+    
+    width: 1000px;
+  }
+ .bb h2{
+    margin-top: 50px;
+    margin-left: 700px;
+    
+ }
+ .vkollective {
+    margin-left: 700px;
+ }
+ @import url('https://fonts.googleapis.com/css?family=Arimo');
+
+
+.wrapper {
+    position: relative;
+    left: 400px;
+    margin-bottom: 100px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    font-family: "Arimo";
+    -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    background: url(https://phonoteka.org/uploads/posts/2021-06/1624152168_12-phonoteka_org-p-oboi-na-rabochii-stol-mramor-krasivo-16.jpg);
+    
+}
+
+@keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+
+    }
+}
+
+.container {
+    width: 65%;
+    padding: 5% 10%;
+    
+}
+
+h1 {
+    align-self: center;
+}
+
+form {
+    width: 100%;
+    
+}
+   
+
+form input {
+        width: 100%;
+        min-height: 25px;
+        border: 0;
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        font-family: "Arimo";
+        color: #a36e5d;
+        border-radius: 4px;
+}
+
+form label {
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: #8e2807;
+}
+
+form h1 {
+        font-size: 24px;
+        line-height: 10px;
+        color: #493b76;
+        letter-spacing: 1px;
+}
+
+form h1:nth-of-type(2) {
+        margin-top: 10%;
+}
+
+
+.name {
+  justify-content: space-between;
+  display: flex;
+  
+    
+}
+
+.name div {
+        width: 30%;
+}
+
+.gr {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.gr div {
+        width: 45%;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info div {
+    width: 30%;
+}
+
+
+
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.btns button {
+    margin: 3px 0;
+    height: 30px;
+    width: 40%;
+    color: #cfc9e1;
+    background-color: #4a3b76;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: .3rem;
+    letter-spacing: 2px
+}
+
+.btns button:hover {
+    animation-name: btn-hov;
+    animation-duration: 550ms;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes btn-hov {
+    100% {
+        background-color: #cfc9e1;
+        color: #4a3b76;
+        transform: scale(1.05)
+    }
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+
+
