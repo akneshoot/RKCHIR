@@ -1,0 +1,50 @@
+button {
+    background: #fff;
+    border: unset;
+    outline: 0;
+    font-size: 18px;
+    cursor: pointer;
+    color: #65676b;
+    padding: 5px 10px;
+  }
+  button.liked {
+    color: #ed0566;
+  }
+  button.liked i{
+    animation: anim 0.5s ease-in-out;
+    -webkit-animation: anim 0.5s ease-in-out;
+}
+
+.like{
+  display: flex;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.likebtn > img{
+  border-radius: 16px;
+  flex-grow: 0.5; 
+  width: 25%;
+  padding: 5px;
+}
+.likebtn > span{
+  flex-grow: 1;
+}
+.likebtn{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 80px;
+  border-radius: 40px;
+  font-size: 140%;
+}
+
+.clicked{
+  background-color: #f770a4;
+}
+.clicked > img{
+  background-color: #e73c7e;
+}
+
+  
