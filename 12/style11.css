@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, a {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+header .container{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+header{
+  position: absolute;
+  width: 2000px;
+  top: 0px;
+  height: 130px;
+  background: url(https://phonoteka.org/uploads/posts/2021-06/1624152168_12-phonoteka_org-p-oboi-na-rabochii-stol-mramor-krasivo-16.jpg);
+  box-shadow: 0 3px 6px rgba(0,0,0,16);
+  opacity: 0.8;
+}
+header .logo{
+    width: 150px;
+    display:block;
+}
+
+body{
+    
+    background:  url(https://i.pinimg.com/originals/22/8e/30/228e303f741a61efc44deb7e793951df.png);
+    color: #000;
+    background-attachment: fixed; 
+	
+}
+
+
+
+
+  
+  .heading-text {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .heading-text span {
+    font-weight: 100;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  a {
+  
+    background-color: goldenrod;
+    text-decoration: none;
+    
+  }
+  
+ 
