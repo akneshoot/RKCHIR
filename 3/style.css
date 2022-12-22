@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+h1 {
+    color:rgb(41, 27, 54);
+    font-family: 'Bungee Spice', cursive;
+    text-decoration: underline;
+}
+
+
+a:visited{
+    color:rgb(21, 230, 101);
+    }
+
+a:hover{
+    background-color: #95c91d;
+
+}
+
+a:active{
+    color: rgb(224, 35, 192);
+}
+
+nav{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    position: fixed; 
+    right: 10px;
+    top: 10px;
+    
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color:azure; height: 100px ;
+    
+}
+
+strong{
+    position: absolute;
+    left: 500px;
+    top: 640px;
+}
+
+#telef{
+    position:relative;
+    top: 100px;
+}
+
+#products{
+    height: 100px;
+    width: 200px;
+    display: block;
+    background: rgb(51, 46, 53);
+}
+
+#company{
+    height: 100px;
+    width: 200px;
+    display: block;
+    background: rgb(51, 46, 53);
+}
+
+#lonely{
+    
+    height: 100px;
+    width: 200px;
+    display: block;
+    
+    background: rgb(51, 46, 53);
+}
+
+
+
+.main{
+    margin: 10px;
+    text-align: center;
+    padding: 100px;
+}
+
+#praga{
+    float: left;
+    margin-right: 1rem;
+}
+
+#cake{
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+}
+
+#red{
+    font-family:'Times New Roman', Times, serif;
+}
+
+#barhat{
+    float: left;
+    margin-right: 1rem;
+}
+
+#zakaz{
+    font-family:'Times New Roman', Times, serif;
+}
