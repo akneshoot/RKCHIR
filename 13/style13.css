@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  p, a {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background:  url(https://trikky.ru/wp-content/blogs.dir/1/files/2022/04/16/1625274567-61-kartinkin-com-p-ga.jpg);
+    color: #000;
+    background-attachment: fixed; 
+}
+
+
+.hrefs_quest{
+    display: flex;
+    background: url(https://i.pinimg.com/564x/de/a7/56/dea756655ffecb1f050b2c1530c329ed.jpg);
+    padding: 80px;
+    margin: 40px;
+    border-radius: 20px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    background: url(https://i.pinimg.com/564x/de/a7/56/dea756655ffecb1f050b2c1530c329ed.jpg);
+    padding: 10px;
+    margin: 40px;
+    border-radius: 10px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#main_image{
+    margin: 10px;
+    border-radius: 20px;
+    width: 20%;
+}
+#gallery_list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 10px;
+}
+.list_img{
+    width: 50%;
+}
+.ulselect{
+    display: flex;
+    flex-direction: column;
+    background: url(https://i.pinimg.com/564x/de/a7/56/dea756655ffecb1f050b2c1530c329ed.jpg);
+    padding: 10px;
+    margin: 40px;
+    border-radius: 20px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.ulselect ul{
+    list-style: none;
+    text-align: center;
+}
+.ulselect li{
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.selected {
+    background: aqua;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+.slid_move{
+    display: flex;
+    flex-direction: column;
+    background: url(https://i.pinimg.com/564x/de/a7/56/dea756655ffecb1f050b2c1530c329ed.jpg);
+    padding: 40px;
+    margin: 40px;
+    border-radius: 20px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.slider {
+border-radius: 5px;
+background: #E0E0E0;
+background: linear-gradient(left top, #E0E0E0, #EEEEEE);
+width: 310px;
+height: 15px;
+margin: 5px;
+}
+
+.thumb {
+width: 10px;
+height: 25px;
+border-radius: 3px;
+position: relative;
+left: 10px;
+top: -5px;
+background: rgb(26, 157, 174);
+cursor: pointer;
+}
+.carts {
+    width: 93px;
+    height: 98px;
+    background: url(https://www.svgrepo.com/show/32619/cart.svg) no-repeat;
+    padding: 5px;
+    position: relative;
+  }
+  
+  
+  .draggable {
+    cursor: pointer;
+  }
+.cart{
+    display: flex;
+    margin: 80px;
+    padding: 40px;
+    background: url(https://i.pinimg.com/564x/de/a7/56/dea756655ffecb1f050b2c1530c329ed.jpg);
+    border-radius: 20px;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.counter111{
+    position: absolute;
+    padding: 8px;
+    top: -6px;
+    left: 86px;
+    background: url(https://i.pinimg.com/564x/de/a7/56/dea756655ffecb1f050b2c1530c329ed.jpg);
+    border-radius: 20px;
+}
