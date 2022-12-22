@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+html,body{
+    height: 100%;
+}
+
+
+body{
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.65;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    opacity: 1;
+}
+
+.hamburger {
+    top:50%;
+    left:10%;
+    width: 50px;
+    height: 6px;
+    background: #FCFCFC;
+    position: absolute;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: 0.5s;
+  }
+
+header .container{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+img{
+    max-width: 100%;
+    
+}
+
+header{
+    background: url(https://phonoteka.org/uploads/posts/2021-06/1624152168_12-phonoteka_org-p-oboi-na-rabochii-stol-mramor-krasivo-16.jpg);
+    box-shadow: 0 3px 6px rgba(0,0,0,16);
+    opacity: 0.8;
+}
+header .logo{
+    width: 150px;
+    display:block;
+}
+
+header .mnu_top{
+    list-style-type: none;
+}
+
+header .mnu_top li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+header .mnu_top li a{
+    display:block;
+    text-decoration:none ;
+    color: #222;
+}
+
+
+header .mnu_top li a:hover{
+    color: #fc521f;
+}
+
+#main{
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    position: relative;
+    
+    
+    
+}
+
+#main::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,.7);
+}
+
+#main .inner {
+    z-index: 2;
+    position: relative;
+
+}
+#main .inner > h1{
+    font-size: 56px;
+    color: #111;
+
+}
+
+#main .inner > .description{
+    margin: 15px 0 30px;
+    color: #fff;
+
+}
+
+
+#content{
+    padding: 50px 0;
+}
+
+
+#content .inner_content p{
+    margin: 1em 0;
+    font-size: 15px;
+
+}
+
+
+
+
+.tabs {
+    width: 100% ;
+    padding: 0px;
+    margin:0 auto;
+}
+.tabs>input { display: none; }
+.tabs>div {
+    display: none;
+    padding: 12px;
+    border: 1px solid #C0C0C0;
+    background: url(https://phonoteka.org/uploads/posts/2021-06/1624152168_12-phonoteka_org-p-oboi-na-rabochii-stol-mramor-krasivo-16.jpg);
+}
+.tabs>label {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 -5px -1px 0;
+    text-align: center;
+    color: #666666;
+    border: 1px solid #C0C0C0;
+    background: #E0E0E0;
+    cursor: pointer;
+}
+.tabs>input:checked + label {
+    color: #000000;
+    border: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    background: #ffcdd2;
+}
+#tab1:checked ~ #txt1,
+#tab2:checked ~ #txt2,
+#tab3:checked ~ #txt3
+{ display: block; }
+
+body{
+    background:  url(https://i.pinimg.com/originals/22/8e/30/228e303f741a61efc44deb7e793951df.png);
+
+    color: #000;
+    background-attachment: fixed; 
+	
+}
+
+footer {
+    background: url(https://phonoteka.org/uploads/posts/2021-06/1624152168_12-phonoteka_org-p-oboi-na-rabochii-stol-mramor-krasivo-16.jpg);
+    box-shadow: 0 3px 6px rgba(0,0,0,16);
+    opacity: 0.8;
+}
+
+textarea{
+    background: url(https://phonoteka.org/uploads/posts/2021-06/1624152168_12-phonoteka_org-p-oboi-na-rabochii-stol-mramor-krasivo-16.jpg);
+    
+}
+#comm{
+    font-size: 15px;
+    font-family: 'Josefin Sans';
+}
+legend{
+    font-size: 20px;
+    
+}
+
+fieldset{
+    opacity: 0.8;
+}
+
+.visi {
+    visibility: visible;
+}
+  
+  .not{
+    visibility: hidden;
+}
+
+
+ 
+
+  
+  /* hamburger */
+  .checkbox {
+    display: none;
+  }
+  
+  .button {
+    position: relative;
+    background-color: white;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5vh; 
+    right: 5vw; 
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem black;
+    text-align: center; 
+    cursor: pointer;
+  }
+  
+  .background {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5.5vh; 
+    right: 5.5vw; 
+    background:  url(https://i.pinimg.com/originals/22/8e/30/228e303f741a61efc44deb7e793951df.png);
+    z-index: 1000;
+  
+    
+  }
+  
+  .nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s;
+  }
+  
+  .list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .item {
+    margin: 1rem;
+    font-size: 36px;
+  }
+  
+  .link:link,
+  .link:visited {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      white 50%
+    );
+    background-size: 220%;
+    transition: all 0.4s;
+  }
+  
+  .link:hover,
+  .link:active {
+    color: lightgreen;
+    cursor: pointer;
+  }
+  
+  /* functionality */
+  .checkbox:checked ~ .background {
+    transform: scale(80);
+  }
+  .checkbox:checked ~ .nav {
+    opacity: 1;
+    width: 100%;
+    right: 0;
+  }
+  
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .icon,
+  .icon::before,
+  .icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: gray;
+    display: inline-block;
+  }
+  
+  .icon::before,
+  .icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+  }
+  
+  .icon::before {
+    top: -0.8rem;
+  }
+  .icon::after {
+    top: 0.8rem;
+  }
+  
+  .button:hover icon:before {
+    top: -1rem;
+  }
+  .button:hover icon::after {
+    top: 1rem;
+  }
+  
+  .checkbox:checked + .button .icon {
+    background-color: transparent;
+  }
+  
+  .checkbox:checked + .button .icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  .checkbox:checked + .button .icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  .section__gallery {
+    margin-bottom: 64px;
+  }
+  .section__gallery:last-child {
+    margin-bottom: 0;
+  }
+  .h2 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 48px;
+    color: #fff;
+  }
+  .gallery {
+    position: relative;
+  }
+  .gallery__flex {
+    height: 600px;
+    display: flex;
+  }
+  /* дополнительный класс для вертикального расположения блоков с изображениями */
+  .gallery__flex_column {
+    flex-direction: column;
+  }
+  .gallery__item {
+    flex: 1; /* изначальное значени для все элементов */
+    transition: flex-grow 0.64s ease-in-out; /* для плавного изменения занимаемого пространства */
+  
+    /* если блоки изображений отображаются вертикально, им необходимо задать overflow: hidden; или min-height: 0; иначе блоки с изображениями не будут сжиматься и выйдут за границы блока галереи */
+    overflow: hidden;
+    min-height: 0;
+  }
+  .gallery__item:hover {
+    flex: 16; /* при наведении меняем значение flex */
+  }
+  .gallery__item img {
+    /* пропорционально растягиваем изображение на весь блок <div class="gallery__item"></div> */
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+    /* для плавного перехода используем transition */
+    transition: transform 1.6s ease-in-out;
+    /* изначально изображение немного увеличено */
+    transform: scale(1.1);
+  }
+  .gallery__item:hover img {
+    transform: scale(1); /* при наведении убираем масштабирование изображения */
+  }
+
